@@ -1,0 +1,110 @@
+
+.aboutus{
+    background: url(../../assets/bg.png) ;
+    width: 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.aboutus__container{
+    padding: 7rem 9rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.aboutus__overlay{
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    width: 390px;
+    height: 415px;
+    z-index: 0;
+}
+.aboutus__overlay img {
+    width: 100%;
+    height: 100%;
+}
+.aboutus__content{
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.aboutus__content__left{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.aboutus__content__image{
+    height: 80%;
+    margin: 0 50px;
+}
+.aboutus__content__image img {
+    height: 910px;
+}
+.aboutus__content__left h2 , .aboutus__content__right h2{
+    font-family: 'Cormorant Upright';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 130%;
+letter-spacing: 0.03em;
+text-transform: capitalize;
+font-feature-settings: 'tnum' on, 'lnum' on;
+color: #DCCA87;
+
+}
+.aboutus__content__left p ,.aboutus__content__right p{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+letter-spacing: 0.04em;
+color: #AAAAAA;
+margin-bottom: 40px;
+margin-top: 20px;
+}
+.aboutus__content__left a , .aboutus__content__right a{
+    font-family: 'Cormorant Upright';
+border-radius: 2px;
+padding: 10px 32px;
+background: #DCCA87;
+color: var(--color-black);
+
+}
+.aboutus__content__right img{
+   transform: rotate(180deg);
+}
+.aboutus__content__right{
+    text-align: left;
+}
+
+@media screen and (max-width:900px){
+    .aboutus__content{
+        flex-direction: column;
+    }
+    .aboutus__overlay{
+        left: 27%;
+    }
+    .aboutus__content__image{
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width:550px){
+    .aboutus__container{
+        padding: 7rem 2rem;
+    }
+    .aboutus__overlay{
+        
+        left: 17%;
+        width: 300px;
+        height: 345px;
+    }
+
+}

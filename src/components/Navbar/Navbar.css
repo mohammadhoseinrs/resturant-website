@@ -1,0 +1,120 @@
+.navbar__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+.navbar__title{
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.navbar__menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans';
+    flex: 0.4;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+.navbar__menu li{
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.navbar__menu li:hover{
+    color: var(--color-gray);
+}
+.navbar__login{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.3;
+    cursor: pointer;
+}
+
+.border{
+    width: 2px;
+    height: 20px;
+    background-color: var(--color-gray);
+}
+.hamburgermenu{
+    display: none;
+    cursor: pointer;
+}
+.togglemenu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-black);
+    z-index: 10;
+}
+.menu__hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hamburger__menu li{
+    color: var(--color-golden);
+    text-transform: capitalize;
+    list-style: none;
+    margin: 30px 0;
+    font-size: 28px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+.hambureger__icon{
+    padding: 3rem;
+    color: var(--color-golden);
+    text-align: right;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1150px){
+    .navbar__menu{
+        display: none;
+    }
+    .hamburgermenu{
+        display: block;
+    }
+    .navbar__login{
+        flex: 1;
+        justify-content: center;
+    }
+    .border{
+        margin: 0 20px ;
+    }
+}
+
+@media screen and (max-width:650px){
+    .navbar__container{
+        padding: 2rem;
+    }
+    .navbar__login{
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px){
+    .navbar__title{
+        font-size: 26px;
+    }
+}

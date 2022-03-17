@@ -1,0 +1,121 @@
+
+.chef{
+    background-image: url('./../../assets/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.chef__container{
+    padding: 6rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chef__image{
+    flex: 0.4;
+}
+.chef__image img {
+    width: 100%;
+}
+.chef__right{
+    flex: 0.5;
+}
+.cheft__right__top p{
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+}
+.cheft__right__top div{
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #DCCA87;
+}
+.chef__right_middle div {
+    display: flex;
+    align-items: center;
+}
+.chef__right_middle > div > img {
+    width: 30px;
+}
+.chef__right_middle > div > p {
+    margin-left: 10px;
+}
+.chef__right_middle{
+font-family: 'Open Sans';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+letter-spacing: 0.04em;
+color: #AAAAAA;
+}
+.chef__right__bottom{
+    margin-top: 60px;
+}
+.chef__right__bottom p {
+    font-family: 'Cormorant Upright';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 130%;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+font-feature-settings: 'tnum' on, 'lnum' on;
+color: #DCCA87;
+}
+.chef__right__bottom div {
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+letter-spacing: 0.04em;
+color: #AAAAAA;
+margin-bottom: 20px;
+}
+.chef__right__bottom img {
+    width: 200px;
+}
+
+@media screen and (max-width:950px){
+    .chef__container{
+        flex-direction: column;
+    }
+    .chef__right{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:550px){
+    .chef__container{
+        padding: 2rem 2rem;
+    }
+    .cheft__right__top div {
+        font-size: 32px;
+        margin: 20px 0;
+    }
+    .chef__right_middle{
+        font-size: 12px;
+    }
+    .chef__right__bottom p {
+        font-size: 24px;
+    }
+    .chef__right__bottom div {
+        font-size: 12px;
+    }
+    .chef__right__bottom img {
+        width: 100px;
+    }
+}

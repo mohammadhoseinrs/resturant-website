@@ -1,0 +1,102 @@
+
+.findus{
+    background-image: url('./../../assets/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.findus__container{
+    padding: 6rem 8rem;
+    display: flex;
+    justify-content: space-between;
+align-items: flex-start;
+}
+.findus__container__left__top p{
+    font-family: 'Cormorant Upright';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 130%;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+}
+.findus__container__left__top div {
+    font-family: 'Cormorant Upright';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 130%;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+color: #DCCA87;
+margin-bottom: 60px;
+}
+.findus__container__left__top span{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+letter-spacing: 0.04em;
+color: #AAAAAA;
+
+}
+.findus__container__left__bottom p{
+    margin-top: 30px;
+    font-family: 'Cormorant Upright';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 130%;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+font-feature-settings: 'tnum' on, 'lnum' on;
+color: #DCCA87;
+}
+.findus__container__left__bottom div{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+letter-spacing: 0.04em;
+}
+.findus__container__left__bottom div:nth-child(3){
+    margin-bottom: 50px;
+}
+.findus__container__right{
+    flex: 0.7;
+}
+.findus__container__left{
+    flex: 1;
+}
+.findus__container__right img {
+    width: 100%;
+}
+
+.findus__container__left__bottom a{
+    font-family: 'Cormorant Upright';
+border-radius: 2px;
+padding: 10px 32px;
+background: #DCCA87;
+color: var(--color-black);
+
+}
+
+@media screen and (max-width:1150px){
+    .findus__container{
+        flex-direction: column;
+    }
+    .findus__container__right{
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .findus__container{
+        padding: 6rem 2rem;
+    } 
+}

@@ -1,0 +1,120 @@
+.laurels{
+    background-image: url('./../../assets/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.laurels__container{
+    padding: 6rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.laurels__container__left{
+    flex: 0.6;
+}
+.laurels__container__right{
+    flex: 0.4;
+}
+.laurels__container__right img {
+    width: 100%;
+}
+.laurels__container__left__top p{
+    font-family: 'Cormorant Upright';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 130%;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+font-feature-settings: 'tnum' on, 'lnum' on;
+}
+.laurels__container__left__top div {
+    font-family: 'Cormorant Upright';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 130%;
+letter-spacing: 0.03em;
+text-transform: capitalize;
+font-feature-settings: 'tnum' on, 'lnum' on;
+color: #DCCA87;
+}
+.laurellls{
+    flex-basis: 50%;
+}
+.laurels__container__left__bottom{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+}
+.laurels__container__left__bottom__item{
+    display: flex;
+    margin-top: 30px;
+}
+.laurels__container__left__bottom__item__image{
+    flex: 0.2;
+}
+.laurels__container__left__bottom__item__image img {
+    width: 100%;
+}
+.laurels__container__left__bottom__item__right{
+    flex: 0.6;
+    margin-left: 30px;
+}
+.laurels__container__left__bottom__item__right p{
+    font-family: 'Cormorant Upright';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 130%;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+font-feature-settings: 'tnum' on, 'lnum' on;
+color: #DCCA87;
+margin-bottom: 10px;
+}
+.laurels__container__left__bottom__item__right span{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+letter-spacing: 0.04em;
+color: #AAAAAA;
+}
+@media screen and (max-width:1100px){
+    .laurels__container{
+        flex-direction: column;
+    }
+    .laurels__container__right{
+        margin-top: 40px;
+    }
+    .laurels__container__left__bottom{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:550px){
+    .laurels__container{
+        padding: 6rem 2rem;
+    }
+    .laurels__container__left__top div{
+        font-size: 34px;
+    }
+    .laurels__container__left__top p{
+        font-size: 18px;
+    }
+    .laurels__container__left__bottom__item__image img {
+        width: 70%;
+    }
+    .laurels__container__left__bottom__item__right p{
+        font-size: 18px;
+    }
+    .laurels__container__left__bottom__item__right span{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,123 @@
+.specialmenu{
+    padding: 6rem 8rem;
+}
+.menu__container__top{
+    text-align: center;
+}
+.menu__container__top p {
+    font-family: 'Cormorant Upright';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 130%;
+/* or 83px */
+
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+
+/* DCCA87 */
+
+color: #DCCA87;
+}
+.menu__bottom{
+    display: flex;
+}
+.menu__bottom__left{
+    flex: 0.25;
+}
+.menu__bottom__middle{
+    flex: 0.5;
+}
+.menu__bottom__middle img {
+    width: 100%;
+}
+.menu__bottom__right{
+    flex: 0.25;
+}
+.menu__title{
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+}
+.menu__itself{
+    margin: 50px 0;
+}
+.menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-golden);
+    flex: 0.4;
+}
+.menu__item p{
+    flex: 0.5;
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;    
+    color: #DCCA87;
+}
+.menu__item span{
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+     text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+}
+.menu__submenu{
+    margin-top: 10px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+     color: #AAAAAA;
+}
+.menu__read_more{
+    text-align: center;
+    margin-top: 70px;
+}
+.menu__read_more button{
+    border: none;
+    outline: none;
+    font-family: 'Cormorant Upright';
+    border-radius: 2px;
+    padding: 10px 32px;
+    background: #DCCA87;
+    color: var(--color-black);
+    cursor: pointer;
+}
+
+@media screen and (max-width:1180px){
+    .menu__bottom{
+        flex-direction: column;
+    }
+    .menu__line{
+        flex: 0.2;
+    }
+}
+
+@media screen and (max-width:550px){
+    .specialmenu{
+        padding: 6rem 2rem;
+    }
+}
