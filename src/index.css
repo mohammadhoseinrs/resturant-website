@@ -11,9 +11,6 @@
   --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
 }
-html{
-  scroll-behavior: smooth;
-}
 
 * {
   box-sizing: border-box;
